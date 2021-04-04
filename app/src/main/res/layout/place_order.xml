@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/conta"
+        android:orientation="vertical"
+        android:background="@drawable/done_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/collab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Place Order Now"
+                android:textColor="#515C6F"
+                android:textSize="25dp" />
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:id="@+id/image"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/review"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Process For Placing Order Is Nearly Completed Just Pay Your Bill Via UIP Payment For Placing Order."
+            android:layout_marginLeft="15dp"
+            android:id="@+id/des"
+            android:layout_marginRight="15dp"
+
+            android:fontFamily="@font/open_sans_bold"
+            android:textSize="15dp"
+            android:textColor="#515C6F"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Amount Of Payment: "
+            android:layout_marginLeft="15dp"
+            android:id="@+id/pay"
+            android:layout_marginRight="15dp"
+
+            android:fontFamily="@font/open_sans_bold"
+            android:textSize="15dp"
+            android:textColor="#515C6F"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/got_it"
+            android:gravity="center"
+            android:text="Pay Now"
+            android:id="@+id/done"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="5dp"
+            android:textColor="#515C6F"
+            android:fontFamily="@font/open_sans_bold"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/done" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

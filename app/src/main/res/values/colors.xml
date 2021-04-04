@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+
+    <color name="lightGray">#F2F2F2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="disabledBtnBg">#999999</color>
+
+    <color name="colorAccent">#03DAC5</color>
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+    <color name="black">#000000</color>
+
+    <!-- colors for tab and screent text -->
+    <color name="colorEndGrad">#167A1C</color>
+    <color name="colorStartGrad">#54B159</color>
+
+    <color name="colorEndGradBG">#E2BAC8</color>
+    <color name="colorStartGradBG">#D8F8DA</color>
+
+
+
+
+    <color name="colorTrans">#73E479</color>
+
+    <color name="textColor">#212121</color>
+    <color name="textColorHead">#777777</color>
+
+    <color name="colorBackground">#F1F4F7</color>
+    <color name="colorPomegranate">#C0392B</color>
+
+    <color name="colorIcon">#C0392B</color>
+    <color name="colorItemName">#2E4B59</color>
+    <color name="colorItemDetailBackground">#90A6B4</color>
+
+    <color name="orderAccepted">#BEEC85</color>
+    <color name="orderRejected">#F398BB</color>
+
+
+    <!-- colors for button style -->
+
+    <color name="selected_dot">#2D9CDB</color>
+    <color name="idle_dot">#662D9CDB</color>
+    <color name="ob_header">#4A4A4A</color>
+    <color name="ob_desc">#4A4A4A</color>
+</resources>

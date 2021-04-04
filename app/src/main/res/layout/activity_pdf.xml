@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pdf">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="72.0dip"
+        android:layout_marginLeft="-20.0dip"
+        android:layout_marginRight="-20.0dip"
+        android:background="@drawable/tittle"
+        app:layout_constraintBottom_toTopOf="@+id/web"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="NotSibling">
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-4.0dip"
+            android:fontFamily="@font/montserrat"
+            android:text="Article Of The Day"
+            android:textColor="@color/white"
+            android:textSize="18.0dip"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/imageView3"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:onClick="back"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30.0dip"
+            android:layout_marginTop="-5.0dip"
+            android:background="@drawable/ic_arrow_back_black_24dpsad" />
+    </FrameLayout>
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

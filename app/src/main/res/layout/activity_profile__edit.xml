@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="1000.0dip">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Set Up Your Profile"
+                android:textColor="#1F0D4D"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/m"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="50dp"
+                    android:src="@drawable/male"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/f"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:src="@drawable/female"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginTop="30.0dip"
+                android:fontFamily="@font/montserrat"
+                android:text="Your Name"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:textSize="18.0dip"
+                android:textColor="@color/black"
+                android:textColorHint="#ab2b65a0"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:id="@+id/con_name"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="30.0dip"
+                android:fontFamily="@font/montserrat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginTop="10.0dip"
+                android:fontFamily="@font/montserrat"
+                android:text="Your Contact Email"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:textSize="18.0dip"
+                android:textColor="@color/black"
+                android:textColorHint="#ab2b65a0"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:id="@+id/con_email"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="30.0dip"
+                android:fontFamily="@font/montserrat" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="Your Contact Information"
+                android:fontFamily="@font/montserrat" />
+
+
+            <EditText
+                android:id="@+id/contact_con"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="30.0dip"
+                android:fontFamily="@font/montserrat"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:textColorHint="#ab2b65a0"
+                android:textSize="18.0dip" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="Add Address"
+                android:fontFamily="@font/montserrat" />
+
+            <EditText
+                android:textSize="18.0dip"
+                android:textColor="@color/black"
+                android:textColorHint="#ab2b65a0"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:id="@+id/col_add"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="30.0dip"
+                android:maxLines="5"
+                android:inputType="textImeMultiLine"
+                android:fontFamily="@font/montserrat" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="Add Pincode"
+                android:fontFamily="@font/montserrat" />
+
+            <EditText
+                android:textSize="18.0dip"
+                android:textColor="@color/black"
+                android:textColorHint="#ab2b65a0"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:id="@+id/pinb_con"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="30.0dip"
+                android:fontFamily="@font/montserrat" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="Short Description About Your Self"
+                android:fontFamily="@font/montserrat" />
+
+            <EditText
+                android:textSize="18.0dip"
+                android:textColor="@color/black"
+                android:textColorHint="#ab2b65a0"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:id="@+id/dis"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="30.0dip"
+                android:maxLines="5"
+                android:inputType="textImeMultiLine"
+                android:fontFamily="@font/montserrat" />
+
+            <Button
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/save_con"
+                android:background="@drawable/hrader_profile_view"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="10.0dip"
+
+                android:layout_width="300.0dip"
+                android:layout_height="50.0dip"
+                android:layout_marginTop="20.0dip"
+                android:text="Done"
+                android:fontFamily="@font/montserrat" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
